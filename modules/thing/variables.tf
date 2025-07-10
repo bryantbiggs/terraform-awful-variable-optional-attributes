@@ -11,21 +11,22 @@ variable "something" {
   default = null
 }
 
-variable "something_else" {
-  description = "Another thing"
-  type = object({
-    cool = optional(bool, true)
-    fancy = optional(object({
-      wizard = optional(bool, true)
-      magic  = optional(string, "abracadabra")
-      spells = optional(list(string), ["fireball", "lightning bolt"])
-    }))
-  })
-  default = {
-    fance = {
-      wizard = false
-      magic  = "hocus pocus"
-      spells = ["teleport", "invisibility"]
-    }
-  }
-}
+# variable "something_else" {
+#   description = "Another thing"
+#   type = object({
+#     cool = optional(bool, true)
+#     fancy = optional(object({
+#       wizard = optional(bool, true)
+#       magic  = optional(string, "abracadabra")
+#       spells = optional(list(string), ["fireball", "lightning bolt"])
+#     }))
+#   })
+#   default = null
+#   # default = {
+#   #   fance = {
+#   #     wizard = false
+#   #     magic  = "hocus pocus"
+#   #     spells = ["teleport", "invisibility"]
+#   #   }
+#   # }
+# }

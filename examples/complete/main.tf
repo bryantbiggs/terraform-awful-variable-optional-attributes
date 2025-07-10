@@ -2,22 +2,31 @@ module "main_thing" {
   source = "../.."
 
   things = {
-    one = {
+    no_magic = {
       something = {
-        cool = false
         fancy = {
           wizard = false
           magic  = "no magic"
-          spells = []
+          # spells = [
+        }
+      }
+    }
+    witch = {
+      something = {
+        fancy = {
+          wizard = true
+          magic  = "witchcraft"
+          # spells = ["potion", "curse"]
         }
       }
     }
   }
 
   default_things = {
-    fancy = {
-      # This DOES NOT WORK !!!
-      magic = "I'm the captain now"
+    something = {
+      fancy = {
+        spells = ["HOLY SHIT!!!"]
+      }
     }
   }
 }
