@@ -1,25 +1,25 @@
 module "main_thing" {
-    source = "../.."
+  source = "../.."
 
-    things = {
-        one = {
-            something = {
-                cool = false
-                fancy = {
-                    wizard = false
-                    magic  = "no magic"
-                    spells = []
-                }
-            }
+  things = {
+    one = {
+      something = {
+        cool = false
+        fancy = {
+          wizard = false
+          magic  = "no magic"
+          spells = []
         }
+      }
     }
+  }
 
-    default_things = {
-        fance = {
-            # This DOES NOT WORK !!!
-            magic = "I'm the captain now"
-        }
+  default_things = {
+    fancy = {
+      # This DOES NOT WORK !!!
+      magic = "I'm the captain now"
     }
+  }
 }
 
 output "main_thing" {
