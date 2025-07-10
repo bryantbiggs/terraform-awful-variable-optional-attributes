@@ -1,0 +1,28 @@
+{
+  "module_things": {
+    "one": {
+      "something": {
+        "cool": false,
+        "fancy": {
+          "magic": "no magic",
+          "spells": [],
+          "wizard": false
+        }
+      },
+      "something_else": null
+    }
+  },
+  "variable_things": {
+    "one": {
+      "something": {
+        "cool": false,
+        "fancy": {
+          "magic": "no magic",
+          "spells": [],
+          "wizard": false
+        }
+      },
+      "something_else": null
+    }
+  }
+}

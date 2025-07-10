@@ -5,7 +5,7 @@ variable "things" {
       cool = optional(bool, true)
       fancy = optional(object({
         wizard = optional(bool, true)
-        magic  = optional(string, "abracadabra")
+        magic  = optional(string)
         spells = optional(list(string), ["fireball", "lightning bolt"])
       }))
     }))
@@ -23,7 +23,7 @@ variable "things" {
 
 variable "default_things" {
   description = "A collection of things that do things or don't, depending on how you look at it"
-  type = map(object({
+  type = object({
     something = optional(object({
       cool = optional(bool)
       fancy = optional(object({
@@ -40,6 +40,6 @@ variable "default_things" {
         spells = optional(list(string))
       }))
     }))
-  }))
+  })
   default = {}
 }
